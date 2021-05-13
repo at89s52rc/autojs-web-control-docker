@@ -1,0 +1,56 @@
+[2021-05-12T11:59:21.188] [INFO] app - application starting ...
+[2021-05-12T11:59:21.190] [INFO] app - find 4 routes
+[2021-05-12T11:59:21.190] [INFO] app - 应用全局中间件 koa-helmet
+[2021-05-12T11:59:21.191] [INFO] app - 应用全局中间件 koa-cors
+[2021-05-12T11:59:21.191] [INFO] app - 站点资源目录public
+[2021-05-12T11:59:21.192] [INFO] app - 站点目录www
+[2021-05-12T11:59:21.192] [INFO] app - 应用全局中间件 koa-bodyparser
+[2021-05-12T11:59:21.193] [INFO] app - 应用swagger接口文档 访问路劲：/swagger-ui/index.html
+[2021-05-12T11:59:21.194] [INFO] app - 路由 Auth
+[2021-05-12T11:59:21.196] [INFO] app - 路由 Script
+[2021-05-12T11:59:21.196] [INFO] app - 路由 Device
+[2021-05-12T11:59:21.197] [INFO] app - 路由 Scheduler
+[2021-05-12T11:59:21.198] [INFO] app - Listening at 9317
+[2021-05-12T11:59:21.220] [INFO] db.ts - 数据库cloud_auto连接成功！
+[2021-05-12T11:59:42.638] [INFO] app - application starting ...
+[2021-05-12T11:59:42.640] [INFO] app - find 4 routes
+[2021-05-12T11:59:42.641] [INFO] app - 应用全局中间件 koa-helmet
+[2021-05-12T11:59:42.642] [INFO] app - 应用全局中间件 koa-cors
+[2021-05-12T11:59:42.642] [INFO] app - 站点资源目录public
+[2021-05-12T11:59:42.643] [INFO] app - 站点目录www
+[2021-05-12T11:59:42.643] [INFO] app - 应用全局中间件 koa-bodyparser
+[2021-05-12T11:59:42.643] [INFO] app - 应用swagger接口文档 访问路劲：/swagger-ui/index.html
+[2021-05-12T11:59:42.645] [INFO] app - 路由 Auth
+[2021-05-12T11:59:42.647] [INFO] app - 路由 Script
+[2021-05-12T11:59:42.648] [INFO] app - 路由 Device
+[2021-05-12T11:59:42.649] [INFO] app - 路由 Scheduler
+[2021-05-12T11:59:42.651] [INFO] app - Listening at 9317
+[2021-05-12T11:59:42.662] [INFO] db.ts - 数据库cloud_auto连接成功！
+[2021-05-12T12:16:37.998] [INFO] app - application starting ...
+[2021-05-12T12:16:37.999] [INFO] app - find 4 routes
+[2021-05-12T12:16:38.000] [INFO] app - 应用全局中间件 koa-helmet
+[2021-05-12T12:16:38.001] [INFO] app - 应用全局中间件 koa-cors
+[2021-05-12T12:16:38.001] [INFO] app - 站点资源目录public
+[2021-05-12T12:16:38.002] [INFO] app - 站点目录www
+[2021-05-12T12:16:38.002] [INFO] app - 应用全局中间件 koa-bodyparser
+[2021-05-12T12:16:38.003] [INFO] app - 应用swagger接口文档 访问路劲：/swagger-ui/index.html
+[2021-05-12T12:16:38.005] [INFO] app - 路由 Auth
+[2021-05-12T12:16:38.007] [INFO] app - 路由 Script
+[2021-05-12T12:16:38.007] [INFO] app - 路由 Device
+[2021-05-12T12:16:38.008] [INFO] app - 路由 Scheduler
+[2021-05-12T12:16:38.010] [INFO] app - Listening at 9317
+[2021-05-12T12:16:38.022] [INFO] db.ts - 数据库cloud_auto连接成功！
+[2021-05-12T12:17:48.518] [INFO] app - application starting ...
+[2021-05-12T12:17:48.519] [INFO] app - find 4 routes
+[2021-05-12T12:17:48.520] [INFO] app - 应用全局中间件 koa-helmet
+[2021-05-12T12:17:48.521] [INFO] app - 应用全局中间件 koa-cors
+[2021-05-12T12:17:48.521] [INFO] app - 站点资源目录public
+[2021-05-12T12:17:48.522] [INFO] app - 站点目录www
+[2021-05-12T12:17:48.522] [INFO] app - 应用全局中间件 koa-bodyparser
+[2021-05-12T12:17:48.523] [INFO] app - 应用swagger接口文档 访问路劲：/swagger-ui/index.html
+[2021-05-12T12:17:48.524] [INFO] app - 路由 Auth
+[2021-05-12T12:17:48.526] [INFO] app - 路由 Script
+[2021-05-12T12:17:48.527] [INFO] app - 路由 Device
+[2021-05-12T12:17:48.528] [INFO] app - 路由 Scheduler
+[2021-05-12T12:17:48.530] [INFO] app - Listening at 9317
+[2021-05-12T12:17:48.543] [INFO] db.ts - 数据库cloud_auto连接成功！

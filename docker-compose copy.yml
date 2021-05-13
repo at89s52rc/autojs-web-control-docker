@@ -1,0 +1,62 @@
+version: "3"
+
+services:
+  # 数据库
+  yk-mysql:
+    build: ./mysql
+    container_name: yk-mysql
+    environment:
+      TZ: Asia/Shanghai
+    expose:
+      - 3306
+    ports:
+      - "3306:3306"
+    networks:
+      - app-net
+
+  # 数据库管理工具
+  yk-mysql-admin:
+    image: phpmyadmin
+    container_name: yk-mysql-admin
+    depends_on:
+      - yk-mysql
+    links:
+      - yk-mysql
+    environment:
+      PMA_HOST: yk-mysql
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    ports:
+      - "9999:80"
+    networks:
+      - app-net
+
+  # 服务器
+  yk-server:
+    build: ./server
+    container_name: yk-server
+    depends_on:
+      - yk-mysql
+    ports:
+      - "8889:8889"
+    expose:
+      - 8889
+    networks:
+      - app-net
+    restart: always
+
+  # 后台
+  yk-web:
+    build: ./web
+    container_name: yk-web
+    depends_on:
+      - yk-server
+    ports:
+      - "8888:80"
+    links:
+      - yk-server
+    networks:
+      - app-net
+networks:
+  app-net:
+    driver: bridge
