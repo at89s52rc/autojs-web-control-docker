@@ -8,9 +8,9 @@ services:
     environment:
       TZ: Asia/Shanghai
     expose:
-      - 3306
+      - 3366
     ports:
-      - "3306:3306"
+      - "3366:3306"
     networks:
       - app-net
 
@@ -24,7 +24,7 @@ services:
       - yk-mysql
     environment:
       PMA_HOST: yk-mysql
-      PMA_PORT: 3306
+      PMA_PORT: 3366
       PMA_ARBITRARY: 1
     ports:
       - "9999:80"
