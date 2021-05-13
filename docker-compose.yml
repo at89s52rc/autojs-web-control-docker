@@ -7,6 +7,8 @@ services:
     container_name: yk-mysql
     environment:
       TZ: Asia/Shanghai
+    volumes:
+      - "./mysql/data:/var/lib/mysql"
     networks:
       - app-net
 
@@ -18,8 +20,6 @@ services:
       - yk-mysql
     environment:
       PMA_HOST: yk-mysql
-      # PMA_PORT: 3306
-      # PMA_ARBITRARY: 1
     ports:
       - "9999:80"
     networks:
