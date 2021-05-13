@@ -7,10 +7,6 @@ services:
     container_name: yk-mysql
     environment:
       TZ: Asia/Shanghai
-    expose:
-      - 3366
-    ports:
-      - "3366:3306"
     networks:
       - app-net
 
@@ -18,14 +14,12 @@ services:
   yk-mysql-admin:
     image: phpmyadmin
     container_name: yk-mysql-admin
-    depends_on:
-      - yk-mysql
     links:
       - yk-mysql
     environment:
       PMA_HOST: yk-mysql
-      PMA_PORT: 3366
-      PMA_ARBITRARY: 1
+      # PMA_PORT: 3306
+      # PMA_ARBITRARY: 1
     ports:
       - "9999:80"
     networks:
@@ -35,14 +29,10 @@ services:
   yk-server:
     build: ./server
     container_name: yk-server
-    depends_on:
-      - yk-mysql
     links:
       - yk-mysql
     ports:
       - "8889:8889"
-    expose:
-      - 8889
     networks:
       - app-net
 
@@ -50,8 +40,6 @@ services:
   yk-web:
     build: ./web
     container_name: yk-web
-    depends_on:
-      - yk-server
     ports:
       - "8888:80"
     links:

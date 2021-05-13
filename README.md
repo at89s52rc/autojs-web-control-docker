@@ -10,17 +10,13 @@
 ## USE
 
 1. 下载 Autojs
-2. 连接电脑，地址 47.113.101.40:8889
+2. 连接电脑，地址 host:port
 
-交流群 838249290
+## 启动服务
 
-## image
+```sh
 
-![screen-develop](https://raw.githubusercontent.com/zrk1993/autojs-web-control/master/image/develop.png)
-![screen-device](https://raw.githubusercontent.com/zrk1993/autojs-web-control/master/image/device.png)
-![screen-scheduler](https://raw.githubusercontent.com/zrk1993/autojs-web-control/master/image/scheduler.png)
-![screen-workspaces](https://raw.githubusercontent.com/zrk1993/autojs-web-control/master/image/workspaces.png)
+# 修改server 下的 .env.production 的host为服务器IP
+docker-compose up --build
 
-## License
-
-application is [MIT licensed](LICENSE).
+```
