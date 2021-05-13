@@ -10,7 +10,7 @@ const logger = getLogger("db.ts");
 const orm = new DBM({
   connectionLimit: 10,
   host: "yk-mysql",
-  port: 3366,
+  port: 3306,
   user: "root",
   password: "root",
   database: "cloud_auto",
